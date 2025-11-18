@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Loader {
+  width: 100px;
+  height: 100px;
+  border: 10px solid gray;
+  animation: spin 1s linear infinite;
+  border-radius: 50px;
+  border-bottom-color: red;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
